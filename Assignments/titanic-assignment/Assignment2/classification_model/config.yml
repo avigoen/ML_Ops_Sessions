@@ -21,47 +21,18 @@ pipeline_save_file: classification_model_output_v
 
 # Intendention matters in yml and here a key with intended dash is the list 
 features:
-  - MSSubClass
-  - MSZoning
-  - LotFrontage
-  - LotShape
-  - LandContour
-  - LotConfig
-  - Neighborhood
-  - OverallQual
-  - OverallCond
-  - YearRemodAdd
-  - RoofStyle
-  - Exterior1st
-  - ExterQual
-  - Foundation
-  - BsmtQual
-  - BsmtExposure
-  - BsmtFinType1
-  - HeatingQC
-  - CentralAir
-  - FirstFlrSF  # renamed
-  - SecondFlrSF  # renamed
-  - GrLivArea
-  - BsmtFullBath
-  - HalfBath
-  - KitchenQual
-  - TotRmsAbvGrd
-  - Functional
-  - Fireplaces
-  - FireplaceQu
-  - GarageFinish
-  - GarageCars
-  - GarageArea
-  - PavedDrive
-  - WoodDeckSF
-  - ScreenPorch
-  - SaleCondition
-  # this one is only to calculate temporal variable:
-  - YrSold
+  - age
+  - fare
+  - pclass
+  - sex
+  - sibsp
+  - parch
+  - embarked
+  - title
+  - cabin
 
 # set train/test split
-test_size: 0.
+test_size: 0.2  
 
 # to set the random seed
 random_state: 0
